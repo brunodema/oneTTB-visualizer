@@ -1,8 +1,7 @@
 {
   "profiles": {
     "GUI": {
-      "commandName": "Project",
-      "commandLineArgs": "55"
+      "commandName": "Project"
     }
   }
 }
