@@ -7,7 +7,6 @@
 #include <iostream>
 #include <vector>
 #include <chrono>
-#include "tbb/flow_graph.h"
 
 auto DummyToyFunction( const int arg )
 {
