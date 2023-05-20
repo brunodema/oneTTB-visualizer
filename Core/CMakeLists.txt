@@ -1,4 +1,4 @@
-﻿add_executable (core "Core.cpp" "Core.h")
+﻿add_executable (core "Core.cpp" "Core.h" "Node.cpp" "GUIDGenerator.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET core PROPERTY CXX_STANDARD 20)

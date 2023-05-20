@@ -44,23 +44,5 @@ auto DummyToyFunction( const int arg )
 
 int main( int argc, char* argv[] )
 {
-	tbb::flow::graph g;
-	tbb::flow::function_node< int, int > n( g, tbb::flow::unlimited, []( int v ) -> int
-	{
-		std::cout << "n -> " << v << std::endl;
-	return v;
-	} );
-	tbb::flow::function_node< int, int > m( g, tbb::flow::unlimited, []( int v ) -> int
-	{
-	std::cout << "m -> " << v << std::endl;;
-	return v;
-	} );
-	tbb::flow::make_edge( n, m );
-	for ( size_t i = 0; i < 100; i++ )
-	{
-		n.try_put( i );
-	}
-	g.wait_for_all();
-
 	return 0;
 }
