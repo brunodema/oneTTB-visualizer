@@ -14,6 +14,9 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+	<StackPanel >
+		<TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+		<Button Margin="100" Width="100" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center">No Signal</Button>
+	</StackPanel>
 
 </Window>
